@@ -1,0 +1,7 @@
+<?xml version=""1.0"" encoding=""utf-8""?>
+<Dialog character="smurf">
+  <Question>do you want it?
+    <Answer>Yes</Answer>
+    <Answer>No</Answer>
+  </Question>
+</Dialog>
