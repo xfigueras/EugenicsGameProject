@@ -2,7 +2,7 @@
 $xmlstr = <<<XML
 <?xml version='1.0' standalone='yes'?>
 <dialogs>
-	<dialog character="Adolf1">
+	<dialog character="Gan1">
 		<part id="0">
 			<questions>
 				<question type="T">Ugh. My chest hurts. Where Am I?</question>
