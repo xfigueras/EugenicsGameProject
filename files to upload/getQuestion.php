@@ -9,7 +9,13 @@ $dialogs = new SimpleXMLElement($xmlstr);
 foreach ($dialogs as $dialog) {
 	if($dialog['character'] == $char_id)
 	{
-		echo $dialog->part[intval($part_id)]->questions->question[intval($question_idx)];
+		foreach($dialog->part as $part)
+		{
+			if($part['id'] == $part_id)
+			{
+				echo $part->questions->question[intval($question_idx)];
+			}
+		}
 	}
 }
 ?>

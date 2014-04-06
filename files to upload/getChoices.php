@@ -9,14 +9,18 @@ $dialogs = new SimpleXMLElement($xmlstr);
 foreach ($dialogs as $dialog) {
 	if($dialog['character'] == $char_idx)
 	{
-		$part = $dialog->part[intval($part_id)];
-		
-		if($part->choices)
+		foreach($dialog->part as $part)
 		{
-			foreach($part->choices->children() as $choice)
+			if($part['id'] == $part_id)
 			{
-				$id = $choice['part_ref'];
-				echo "$id"."|$choice/";
+				if($part->choices)
+				{
+					foreach($part->choices->children() as $choice)
+					{
+						$id = $choice['part_ref'];
+						echo "$id"."|$choice/";
+					}
+				}
 			}
 		}
 	}
