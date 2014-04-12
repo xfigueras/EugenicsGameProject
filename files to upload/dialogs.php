@@ -40,7 +40,7 @@ $xmlstr = <<<XML
 				<choice part_ref="5">Who are you calling ‘gimp’?</choice>
 				<choice part_ref="6">How’d you  break your leg?</choice>
 				<choice part_ref="7">So why are you here?</choice>
-				<choice part_ref="-1">I’m tired. I’m gonna sleep now.</choice>
+				<choice part_ref="-1" action_id="sleep">I’m tired. I’m gonna sleep now.</choice>
 			</choices>
 		</part>
 		<part id="5">
@@ -63,15 +63,17 @@ $xmlstr = <<<XML
 		</part>
 		<part id="10">
 			<questions>
-				<question type="T">What do you mean ‘You’re body ain’t your own’?</question>
+				<question type="T" action_id="from question">What do you mean ‘You’re body ain’t your own’?</question>
 			</questions>
+			<!--
 			<answers>
 				<answer part_ref="-1">Once you end up in a place like this, the Collective can pretty  much have its way with you. Its all rumors, although I’ve seen  some of it firsthand. Experiments, organ harvest, surrogacy, sterilizations, its pretty ugly. Nobody talks about it.</answer>
 			</answers>
+			-->
 		</part>
 		<part id="7">
 			<answers>
-				<answer part_ref="-1">Me? Well, I guess I would have to say that it all started with a rattle-drum. But it was why she played it...</answer>
+				<answer part_ref="-1" action_id="walk">Me? Well, I guess I would have to say that it all started with a rattle-drum. But it was why she played it...</answer>
 			</answers>
 		</part>
 	</dialog>
