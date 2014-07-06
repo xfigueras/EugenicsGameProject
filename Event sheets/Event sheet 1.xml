@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="7259582612229139">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2593923833514177" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6155169863023057" type="dialogArrowR">
+                    <param id="0" name="Pin to">dialogDummy</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="31188904054848" type="dialogBackground">
+                    <param id="0" name="Pin to">dialogDummy</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4710275534066609" type="dialogPicture">
+                    <param id="0" name="Pin to">dialogDummy</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4283520190036902" type="dialogText">
+                    <param id="0" name="Pin to">dialogDummy</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5588057082806353" type="dialogArrowL">
+                    <param id="0" name="Pin to">dialogDummy</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8496040077306383">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9851129463143931" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="608812630379013" type="dialogDummy">
+                    <param id="0" name="X">300</param>
+                    <param id="1" name="Y">50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9732761970915377">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8564689638958007" type="Keyboard">
+                    <param id="0" name="Key">66 (B)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="1802115033184133" type="dialogDummy">
+                    <param id="0" name="X">300</param>
+                    <param id="1" name="Y">500</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
